@@ -1,0 +1,46 @@
+baseURL = 'https://huijingting.github.io/'
+languageCode = 'zh-cn'
+title = 'huijingting 的博客'
+theme = 'PaperMod'
+enableRobotsTXT = true
+
+[params]
+  env = 'production'
+  title = 'huijingting 的博客'
+  description = '欢迎来到我的个人博客，记录技术、生活与思考。'
+  keywords = ['博客', '技术', '笔记']
+  author = 'huijingting'
+  showReadingTime = true
+  showToc = true
+  TocOpen = false
+  hidemeta = false
+  comments = false
+  disableHLJS = false
+  disableShare = false
+  hideSummary = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  showhero = false
+
+[params.cover]
+  hiddenInList = true
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    guessSyntax = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 2
